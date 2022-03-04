@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>feet-meters</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th><strong>Feet</strong></th>
+            <th><strong>Meters</strong></th>
+            <th rowspan="2" style="width: 100px; height: 100px"></th>
+            <th><strong>Meters</strong></th>
+            <th><strong>Feet</strong></th>
+        </tr>
+        <tr>
+            <td><input id="inputFeet" type="number" oninput="resultMeters()"></td>
+            <td><span style="color: red" id="resultMeters"></span></td>
+            <td><input id="inputMeters" type="number" oninput="resultFeet()"></td>
+            <td><span style="color: red" id="resultFeet"></span></td>
+        </tr>
+    </table>
+</body>
+</html>
+<script>
+    function feetForMeters(number) {
+        number *= 0.305;
+        return number;
+    }
+    function metersForFeet(number) {
+        number *= 3.279;
+        return number;
+    }
+    function resultMeters() {
+        let inputFeet = +document.getElementById("inputFeet").value;
+        let result = feetForMeters(inputFeet);
+        document.getElementById("resultMeters").innerHTML = result;
+    }
+    function resultFeet() {
+        let inputMeters = +document.getElementById("inputMeters").value;
+        let result = metersForFeet(inputMeters);
+        document.getElementById("resultFeet").innerHTML = result;
+    }
+</script>

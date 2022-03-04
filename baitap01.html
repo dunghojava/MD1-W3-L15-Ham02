@@ -2,9 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>So nguyen to</title>
 </head>
 <body>
-
+<input id="input" type="number" oninput="resultPrime()"><span id="result"></span>
 </body>
 </html>
+<script>
+    function isPrime(number) {
+        let count = 0;
+        for (i = 2; i <= Math.sqrt(number); i++) {
+            if (number % i == 0) {
+                count++;
+            }
+        }
+        if (count == 0 & number > 1) {
+            document.write(number + " la so nguyen to");
+        } else {
+            document.write(number + " khong phai so nguyen to");
+        }
+    }
+
+    function resultPrime() {
+        let input = document.getElementById("input").value;
+        let result = isPrime(input);
+        document.getElementById("result").innerHTML = result;
+    }
+</script>
