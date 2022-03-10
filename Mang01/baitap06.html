@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+
+<script>
+
+    let arr = []
+    let v = prompt('Insert V')
+
+    for (let i = 0; i < 3; i++) {
+        arr[i] = prompt()
+    }
+
+    for (let i = 0; i < arr.length; i++) {
+        var check = false
+        if (v === arr[i]) {
+            check = true
+            break
+        } else {
+            check = false
+        }
+    }
+    if (check) {
+        console.log("V is in the array")
+    } else {
+        console.log("V is not in the array")
+    }
+
+</script>

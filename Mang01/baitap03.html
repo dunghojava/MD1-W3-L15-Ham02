@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+
+<script>
+
+    const arr = []
+    let max = 0
+    let sum = 0
+    for (let i=0; i<3; i++){
+        arr[i] = +prompt()
+        if(max<arr[i]){
+            max = arr[i]
+            sum = sum + arr[i]
+        }
+    }
+    let avg = sum/arr.length
+    console.log('GTLN---- ',max)
+    console.log('TBC----- ',avg)
+    console.log('Sum----- ',sum)
+
+</script>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+
+<script>
+
+    const arr = []
+    let v = prompt('Insert V')
+
+
+    for (let i = 0; i < 3; i++) {
+        arr[i] = prompt()
+    }
+
+    for (let i = 0; i < arr.length; i++) {
+        var check = false
+        if (v === arr[i]) {
+            check = true
+            break
+        } else {
+            check = false
+        }
+    }
+    if (check) {
+        arr[arr.indexOf(v)] = arr[arr.indexOf(v) + 1]
+        arr[arr.length - 1] = null
+    }
+    console.log(arr)
+
+</script>
