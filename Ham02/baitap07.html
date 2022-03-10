@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 7</title>
+</head>
+<body>
+
+</body>
+</html>
+
+<script>
+    let arr = []
+    arr[0] = +prompt('Insert firstvalue')
+    arr[1] = +prompt('Insert second')
+
+    function changePosition(a) {
+        let temp = a[1]
+        a[1] = a[0]
+        a[0] = temp
+        return a
+    }
+
+    changePosition(arr)
+    console.log(arr)
+
+</script>

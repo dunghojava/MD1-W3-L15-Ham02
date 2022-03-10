@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2</title>
+</head>
+<body onload="circle(r)">
+
+</body>
+</html>
+
+<script>
+
+
+    let r = +prompt('Insert radius')
+    let a = +prompt('Choose value to caculate: 1 for circumference , 2 for area')
+
+    function circle(r) {
+        r = parseFloat(r)
+        if (a == 1) {
+            alert(2 * Math.PI * r)
+        } else if (a == 2) {
+            alert(Math.PI * r * r)
+        } else {
+            alert('Please enter 1 or 2')
+        }
+    }
+
+</script>
