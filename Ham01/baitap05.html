@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="check(a)">
+
+</body>
+</html>
+
+<script>
+    let a = prompt('Insert stars name')
+    let stars = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus']
+    let position = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo']
+
+
+    function check(a) {
+        let x = false
+        for (let i = 0; i < stars.length; i++) {
+            if (a == stars[i]) {
+                alert(position[i])
+                x = true
+                break
+            }
+        }
+        if (x == false) {
+            alert('Cannot find value')
+        }
+    }
+</script>
